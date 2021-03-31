@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  padding: 10px;
+  background: #f1f1f1;
+}
+
+/* 页眉/Blog 标题 */
+.header {
+  padding: 30px;
+  text-align: center;
+  background: white;
+}
+
+.header h1 {
+  font-size: 50px;
+}
+
+/* 设置上导航栏的样式 */
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* 设置 topnav 链接的样式 */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* 改变鼠标悬停时的颜色 */
+.topnav a:hover {
+  background-color: #abc;
+  color: 	#4682B4;
+}
+
+/* 创建两个不相等的彼此并排的浮动列 */
+/* 左列 */
+.leftcolumn {   
+  float: left;
+  width: 75%;
+}
+
+/* 右列 */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  background-color: #F08080;
+  padding-left: 20px;
+}
+
+/* 伪图像 */
+.fakeimg {
+  background-color: #FFC0CB;
+  width: 100%;
+  padding: 20px;
+}
+
+/* 为文章添加卡片效果 */
+.card {
+  background-color: #FFE4E1;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+/* 清除列之后的浮动 */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* 页脚 */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 20px;
+}
+
+/* 响应式布局 - 当屏幕的宽度小于 800 像素时，使两列堆叠而不是并排 */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+/* 响应式布局 - 当屏幕的宽度小于 400 像素时，使导航链接堆叠而不是并排 */
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>精选壁纸</h1>
+  <p>用图文表达真情实感😀</p>
+</div>
+
+<div class="topnav">
+  <a href="#">风景</a>
+  <a href="#">卡通</a>
+  <a href="#">萌宠</a>
+</div>
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <h2>今日精选</h2>
+      <h5>风景, 2021.03.31</h5>
+      <div class="fakeimg" style="height:200px;"><img src="flower-1.jpg" width="216" height="144"></div>
+      <p>花枝草蔓眼中开，小白长红越女腮</p>
+    </div>
+    <div class="card">
+      <h2>每月热图</h2>
+      <h5>3月</h5>
+      <div class="fakeimg" style="height:200px;"><img src="flower-2.jpg" width="216" height="144"></div>
+      <p>天半刚风如激箭，绿绡飘荡紫绡寒</p>
+    </div>
+  </div>
+  <div class="rightcolumn">
+    <div class="card">
+      <h2>最近下载</h2>
+      <div class="fakeimg"><img src="桌面.png" width="216" height="144"></div>
+    </div>
+    <div class="card">
+      <h3>最近浏览</h3>
+      <div class="fakeimg"><p><img src="tulip-yellow.jpg" width="216" height="144"></p></div>
+      <div class="fakeimg"><p><img src="tulip-red.jpg" width="216" height="144"></p></div>
+      <div class="fakeimg"><p><img src="flower-1.jpg" width="216" height="144"></p></div>
+    </div>
+    <div class="card">
+      <h3>Follow Me</h3>
+      <p>Some text..</p>
+    </div>
+  </div>
+</div>
+
+<div class="footer">
+  <h2></h2>
+</div>
+
+</body>
+</html>
